@@ -2,7 +2,6 @@
 import React, { cloneElement } from 'react'
 
 export default props => {
-    console.log(typeof props.children.map)
     return (
         <div>
             {

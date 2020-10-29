@@ -11,8 +11,8 @@ export default function Aleatorio(props) {
     //const min = props.min;
     //const max = props.max;
     const { min, max } = props;
-    const [a, b] = [1, 2]
-    const {c, d, x } = {c: 12, d:45, x:'teste'}
+    //const [a, b] = [1, 2]
+    //const {c, d, x } = {c: 12, d:45, x:'teste'}
 
     const aleatorio = parseInt(Math.random() * (max - min)) + min;
     return (
