@@ -5,7 +5,7 @@ import alunos from '../../data/alunos'
 export default (params) => {
 
     const alunosList = alunos.map(aluno => {
-        return (<li key={aluno.id}>{aluno.id}) {aluno.nome} -> {aluno.nota}</li>);
+        return (<li key={aluno.id}>{aluno.id}) {aluno.nome} - {aluno.nota}</li>);
     });
     return (
         <div>
