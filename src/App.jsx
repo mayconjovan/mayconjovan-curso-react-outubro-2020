@@ -18,10 +18,9 @@ export default function App() {
             <h1>Fundamentos React</h1>
             <div className='Cards'>
 
-                <Card titulo="#08 - Repetição Condicional" color='#982395'>
+                <Card titulo="#08 - Renderização Condicional" color='#982395'>
                     <ParOuImpar numero={20} />
-                    <UsuarioInfo usuario={{nome: 'Fernando'}} />
-                    <UsuarioInfo usuario={{email: 'fernando@gmail.com'}} />
+                    <UsuarioInfo usuario={{ nome: 'Fernando' }} />
                 </Card>
                 <Card titulo="#07 - Repetição Desafio" color='#3A9AD9'>
                     <TabelaProdutos />
