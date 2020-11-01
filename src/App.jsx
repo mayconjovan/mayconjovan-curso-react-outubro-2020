@@ -12,13 +12,18 @@ import TabelaProdutos from './components/repeticao/TabelaProdutos'
 import ParOuImpar from './components/condicional/ParOuIMpar'
 import UsuarioInfo from './components/condicional/UsuarioInfo'
 import DiretaPai from './components/comunicacao/DiretaPai'
+import IndiretaPai from './components/comunicacao/IndiretaPai'
 
 export default function App() {
     return (
         <div className="App">
             <h1>Fundamentos React</h1>
             <div className='Cards'>
-                <Card titulo="#09 - Comunicação direta" color='#59323C'>
+                <Card titulo="#10 - Comunicação Indireta" color='#8BAD39'>
+                    <IndiretaPai />
+                </Card>
+
+                <Card titulo="#09 - Comunicação Direta" color='#59323C'>
                     <DiretaPai></DiretaPai>
                 </Card>
 
@@ -26,12 +31,15 @@ export default function App() {
                     <ParOuImpar numero={20} />
                     <UsuarioInfo usuario={{ nome: 'Fernando' }} />
                 </Card>
+
                 <Card titulo="#07 - Repetição Desafio" color='#3A9AD9'>
                     <TabelaProdutos />
                 </Card>
+
                 <Card titulo="#06 - Repetição" color='#FF4C65'>
                     <ListaAlunos></ListaAlunos>
                 </Card>
+
                 <Card titulo="#05 - Componente com Filhos" color='#00C8F8'>
                     <Familia sobrenome='Silva' >
                         <FamiliaMembro nome='Pedro' />
@@ -39,6 +47,7 @@ export default function App() {
                         <FamiliaMembro nome='Gustavo' />
                     </Familia>
                 </Card>
+
                 <Card titulo='#04 - Desafio Aleatório' color='#FA6900'>
                     <Aleatorio min={1} max={60} />
                 </Card>
